@@ -1,0 +1,24 @@
+{
+  "name": "faker-server",
+  "version": "1.0.0",
+  "description": "Nodejs server with a very flexible mock generator   ",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "faker.js",
+    "node",
+    "rest",
+    "mock",
+    "data"
+  ],
+  "author": "Joseph Israel",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "json-schema-faker": "^0.5.0-rcv.24",
+    "restana": "^4.3.5",
+    "yargs": "^15.3.1"
+  }
+}
