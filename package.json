@@ -1,6 +1,6 @@
 {
   "name": "node-faker-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nodejs server with a very flexible mock generator",
   "main": "./src/index.js",
   "scripts": {
@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/josephi/node-faker-server#readme",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/josephi/node-faker-server.git"
+    "type": "git",
+    "url": "https://github.com/josephi/node-faker-server.git"
   },
   "bugs": {
     "url": "https://github.com/josephi/node-faker-server/issues"
