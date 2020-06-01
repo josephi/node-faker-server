@@ -5,7 +5,11 @@ const path = require('path'),
  service = require('restana')(),
  { restanaMiddleware } = require('./FakerServer');
 
-//TODO: Set default value for schemas path
-
-service.use(restanaMiddleware({ schemasDirectory: argv.path, trackCollections: true, urlPrefix: '/api' }));
-service.start(3000)
+service.use(
+    restanaMiddleware({ 
+        schemasDirectory: argv.path, 
+        trackCollections: !!argv.track, 
+        urlPrefix: argv.urlPrefix || '' 
+    })
+);
+service.start(argv.port || 3000)

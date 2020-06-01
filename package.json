@@ -1,7 +1,7 @@
 {
   "name": "faker-server",
   "version": "1.0.0",
-  "description": "Nodejs server with a very flexible mock generator   ",
+  "description": "Nodejs server with a very flexible mock generator",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,8 +13,11 @@
     "mock",
     "data"
   ],
+  "bin": {
+    "faker-server": "./src/index.js"
+  },
   "author": "Joseph Israel",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "faker": "^4.1.0",
     "json-schema-faker": "^0.5.0-rcv.24",
