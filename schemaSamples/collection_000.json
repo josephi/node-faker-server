@@ -23,5 +23,25 @@
       },
       "required": ["fullName", "id" ]
     }
+  },
+  "POST@/users": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "faker": "random.uuid"
+      },
+      "fullName": {
+        "type": "string",
+        "faker": {
+          "fake": "{{name.lastName}}, {{name.firstName}} {{name.suffix}}"
+        }
+      },
+      "email": {
+        "type": "string",
+        "faker": "internet.email"
+      }
+    },
+    "required": ["fullName", "id", "email" ]
   }
 }
